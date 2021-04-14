@@ -5,25 +5,25 @@ public class Number {
 
 	public static void main(String[] args) {
 		
-		System.out.print("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä(1~50)±îÁö:");
-		Scanner sc = new Scanner(System.in);
+		System.out.print("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”(1~50)ê¹Œì§€:");
+		Scanner sc = new Scanner(System.in); // ìŠ¤ìºë„ˆìƒì„±
 		int num=sc.nextInt();
 		int diff = 0;
-		int []arr=new int[10];// 10°³ °ø°£»ı¼º
+		int []arr=new int[10]; // 10ê°œ ê³µê°„ìƒì„±
 		
 		for(int a=0; a<10; a++) { 
-			arr[a]=(int)(Math.random()*50+1); //¼ıÀÚ »ı¼º Random ÇÔ¼ö *¸¶Áö¸·¼ıÀÚ+Ã¹¹øÂ°¼ıÀÚ
+			arr[a]=(int)(Math.random()*50+1); //ìˆ«ì ìƒì„± Random í•¨ìˆ˜ *ë§ˆì§€ë§‰ìˆ«ì+ì²«ë²ˆì§¸ìˆ«ì
 			System.out.print(arr[a]+" ");
 		}
 		System.out.println();
 		
 		for(int i=0; i<10; i++) {
 			if(arr[i] == num) {
-				System.out.println("´çÃ·!");
+				System.out.println("ë‹¹ì²¨!");
 				diff = 1;
 			}
 		}
-		if(diff == 0) System.out.println("²Î");
+		if(diff == 0) System.out.println("ê½");
 	}
 }
 		
